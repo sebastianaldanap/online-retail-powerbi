@@ -19,7 +19,7 @@ Análisis de ventas, geografía, productos y segmentación de clientes de una ti
 
 Este proyecto analiza dos años de transacciones (diciembre 2009 – diciembre 2011) de una empresa mayorista de artículos de regalo y decoración, con sede en el Reino Unido y clientes en más de 40 países.
 
-**Objetivo:** convertir datos transaccionales en información que respalde decisiones de planificación comercial, gestión de inventario y retención de clientes.
+**Objetivo:** Convertir datos transaccionales en información que respalde decisiones de planificación comercial, gestión de inventario y retención de clientes.
 
 **Pregunta principal:** ¿Dónde se concentran los ingresos del negocio (en el tiempo, por país y por producto), y cuánto valor se pierde por cancelaciones?
 
@@ -47,10 +47,10 @@ Se utilizó el dataset público **Online Retail II**, disponible en el UCI Machi
 
 ## 4. Limitaciones del Dataset
 
-- **Clientes sin identificar:** el 22.5% de las transacciones (235,281 filas) no tienen `Customer ID`. Se agruparon bajo "Cliente no identificado" y se excluyeron del análisis de clientes y RFM.
-- **Diciembre 2011 incompleto:** los datos de ese mes solo llegan hasta el día 9. La caída que se observa en la tendencia mensual no representa una baja real de demanda.
-- **Productos sin descripción:** el 8% de los códigos de producto (424 de 5,303) no tienen descripción registrada en ninguna transacción.
-- **Datos históricos:** el dataset cubre 2009-2011. El foco del proyecto es la metodología de análisis, replicable con datos actuales.
+- **Clientes sin identificar:** El 22.5% de las transacciones (235,281 filas) no tienen `Customer ID`. Se agruparon bajo "Cliente no identificado" y se excluyeron del análisis de clientes y RFM.
+- **Diciembre 2011 incompleto:** Los datos de ese mes solo llegan hasta el día 9. La caída que se observa en la tendencia mensual no representa una baja real de demanda.
+- **Productos sin descripción:** El 8% de los códigos de producto (424 de 5,303) no tienen descripción registrada en ninguna transacción.
+- **Datos históricos:** El dataset cubre 2009-2011. El foco del proyecto es la metodología de análisis, replicable con datos actuales.
 
 ## 5. 🔧 Proceso de Transformación (Power Query)
 
@@ -107,7 +107,7 @@ Documentación completa de las 21 medidas, con su tipo de dato, en [`/documentat
 
 ![Visión General](./screenshots/01_panel_vision_general.png)
 
-- **Estacionalidad:** noviembre es el mes de mayor venta en ambos años, consistente con la temporada previa a Navidad.
+- **Estacionalidad:** Noviembre es el mes de mayor venta en ambos años, consistente con la temporada previa a Navidad.
 - **Concentración geográfica:** Reino Unido representa el 85.4% de los ingresos. El resto es mayoritariamente europeo, con Australia como excepción.
 - **Ticket alto vs. volumen alto:** Netherlands, Singapore y Australia muestran un ticket promedio hasta 9 veces superior al general, un patrón de negocio distinto al de Reino Unido.
 
@@ -118,8 +118,8 @@ Documentación completa de las 21 medidas, con su tipo de dato, en [`/documentat
 ![Productos, Clientes y Cancelaciones](./screenshots/02_panel_productos_clientes_cancelaciones.png)
 
 - **Productos:** Regency Cakestand 3 Tier lidera con $0.31 millones.
-- **Clientes:** el Cliente 18102 es el más valioso, con $0.58 millones.
-- **Cancelaciones:** el producto más cancelado, Paper Craft Little Birdie, se explica en gran parte por un pedido atípico de 80,995 unidades. Los viernes concentran más cancelaciones que cualquier otro día.
+- **Clientes:** El Cliente 18102 es el más valioso, con $0.58 millones.
+- **Cancelaciones:** El producto más cancelado, Paper Craft Little Birdie, se explica en gran parte por un pedido atípico de 80,995 unidades. Los viernes concentran más cancelaciones que cualquier otro día.
 
 ### Panel 3 — Segmentación de Clientes (RFM)
 
@@ -141,6 +141,6 @@ Segmentación con metodología RFM (Recencia, Frecuencia, Monto), por quintiles 
 
 ## 9. 💡 Conclusiones y Recomendaciones
 
-- **El negocio depende fuertemente de un mercado (Reino Unido, 85%)**, pero tiene oportunidades claras en mercados de ticket alto como EIRE (Reública de Irlanda) y Netherlands, donde priorizar pocos clientes mayoristas grandes podría ser más eficiente que una estrategia de volumen.
+- **El negocio depende fuertemente de un mercado (Reino Unido, 85%)**, pero tiene oportunidades claras en mercados de ticket alto como Netherlands y Singapore, donde priorizar pocos clientes mayoristas grandes podría ser más eficiente que una estrategia de volumen.
 - **La base de clientes está mayormente sana:** el 56.3% son Campeones o Clientes Nuevos, y solo el 6.4% requiere atención de retención inmediata.
 - **Las cancelaciones son manejables (7.14%)**, pero no distribuidas al azar: se concentran en viernes y en pedidos atípicos de alto volumen, un punto operativo concreto a revisar.
