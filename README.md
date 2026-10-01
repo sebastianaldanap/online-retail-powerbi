@@ -31,7 +31,7 @@ Se utilizó el dataset público **Online Retail II**, disponible en el UCI Machi
 - **Registros originales:** 1,067,371 filas, repartidas en 2 hojas de Excel (2009-2010 y 2010-2011)
 - **Columnas originales:** Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, Country
 
-## 3. ⚠️ Limitaciones del Dataset
+## 3. ❗ Limitaciones del Dataset
 
 - **Clientes sin identificar:** El 22.5% de las transacciones (235,281 filas) no tienen `Customer ID`. Se agruparon bajo "Cliente no identificado" y se excluyeron del análisis de clientes y RFM.
 - **Diciembre 2011 incompleto:** Los datos de ese mes solo llegan hasta el día 9. La caída que se observa en la tendencia mensual no representa una baja real de demanda.
