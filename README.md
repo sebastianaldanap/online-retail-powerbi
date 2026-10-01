@@ -37,7 +37,7 @@ Se utilizó el dataset público **Online Retail II**, disponible en el UCI Machi
 - **Diciembre 2011 incompleto:** Los datos de ese mes solo llegan hasta el día 9. La caída que se observa en la tendencia mensual no representa una baja real de demanda.
 - **Productos sin descripción:** El 8% de los códigos de producto (424 de 5,303) no tienen descripción registrada en ninguna transacción.
 - **Datos históricos:** El dataset cubre 2009-2011. El foco del proyecto es la metodología de análisis, replicable con datos actuales.
-- **Actividad mínima los sábados:** Solo 32 facturas (0.06% del total) se registran ese día, y ninguna corresponde a una cancelación. Por eso el gráfico (panel 2) de cancelaciones por día no muestra una barra visible para sábado; no es un error del gráfico, sino un reflejo de que el negocio opera casi exclusivamente en días hábiles.
+- **Actividad mínima los sábados:** En los 2 años del dataset, solo hay actividad registrada un único sábado (5 de diciembre de 2009, el primer fin de semana del período), con 32 facturas y sin ninguna cancelación. El resto de los sábados del dataset no tienen ninguna transacción. Por eso el gráfico de "Cancelaciones por Día de la Semana" (panel 2) no muestra una barra para sábado: no hay valor que graficar, ya que ninguna cancelación ocurrió ese día.
 
 ## 4. 🔧 Proceso de Transformación (Power Query)
 
