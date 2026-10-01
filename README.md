@@ -26,7 +26,7 @@ Este proyecto analiza dos años de transacciones (diciembre 2009 – diciembre 2
 
 Se utilizó el dataset público **Online Retail II**, disponible en el UCI Machine Learning Repository.
 
-- **Fuente:** Chen, D. (2019). *Online Retail II* [Dataset]. UCI Machine Learning Repository. https://archive.ics.uci.edu/dataset/502/online+retail+ii
+- **Fuente:** [Online Retail II (UCI Machine Learning Repository)](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
 - **Período:** 1 diciembre 2009 – 9 diciembre 2011
 - **Registros originales:** 1,067,371 filas, repartidas en 2 hojas de Excel (2009-2010 y 2010-2011)
 - **Columnas originales:** Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, Country
